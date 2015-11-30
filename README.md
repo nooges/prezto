@@ -57,11 +57,11 @@ Make sure you have this in your `.git/config`:
 
   1. Fetch upstream changes
 
-    git fetch upstream
+        git fetch upstream
 
   2. Merge upstream changes
 
-    git merge upstream/master
+        git merge upstream/master
 
 Usage
 -----
