@@ -46,6 +46,23 @@ Pull the latest changes and update submodules.
 
     git pull && git submodule update --init --recursive
 
+Syncing with Upstream
+---------------------
+
+Make sure you have this in your `.git/config`:
+
+    [remote "upstream"]
+      url = git@github.com:sorin-ionescu/prezto.git
+      fetch = +refs/heads/*:refs/remotes/upstream/*
+
+  1. Fetch upstream changes
+
+    git fetch upstream
+
+  2. Merge upstream changes
+
+    git merge upstream/master
+
 Usage
 -----
 
